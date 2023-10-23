@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <!-- Standard -->
+<!-- Standard -->
   <head>
     <meta charset="utf-8" />
     <title>Portfolio Aufgabe</title>
@@ -17,17 +17,19 @@
     <h1>Die Produktsuche!</h1>
 </header>
 
+<!-- Startseite -->
   <body>
     <main id="startseite">
     <label>Welches Produkt suchen Sie?</label>
     <br>
     <br>
     <input type="text" id="searchInput" placeholder="Produktname eingeben"></input>
-      <button onclick="fetchData()" id="searchButton">Search Data</button>
+      <button onclick="fetchData()" id="searchButton">SUCHEN</button>
     <br>
     <br>
     </main>
 
+<!-- Ergebnisseite als Tabelle -->
     <main id="ergebnis">
     <table>
       <thead>
@@ -44,14 +46,13 @@
     <br>
     </main>
 
-    <!-- Seite neu laden -->
-    <p>Seite neu zu laden:</p>
+<!-- Seite neu laden -->
+    <main id="neu">
+    <p>Suche neu zu laden:</p>
     <i class="fas fa-sync-alt" onclick="refreshPage()"></i>
+    </main>
     
   </body>
-
-
-
 
 <!-- Fußbereich -->
 <footer>

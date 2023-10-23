@@ -1,4 +1,3 @@
-ergebnis.style.display = "none";
 
 document
 .getElementById("searchButton")
@@ -26,6 +25,7 @@ function fetchData() {
         if(products.length === 0) {
             responseFailed.textContent = "Keine Produkte gefunden";
             startseite.style.display = "none";
+            neu.style.display = "block";
         } else {
         products.forEach((product) => {
             const productDiv = document.createElement("tr");
@@ -37,6 +37,7 @@ function fetchData() {
               tableBody.appendChild(productDiv);
               startseite.style.display = "none";
               ergebnis.style.display = "block";
+              neu.style.display = "block";
             });
         }
         } else {
