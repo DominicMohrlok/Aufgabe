@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Standard -->
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio Aufgabe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>  
+
+<!-- Kopfbereich -->
+<header>
+    <h1>Die Produktsuche!</h1>
+</header>
+
+  <body>
+    <main id="startseite">
+    <label>Welches Produkt suchen Sie?</label>
+    <br>
+    <br>
+    <input type="text" id="searchInput" placeholder="Produktname eingeben"></input>
+      <button onclick="fetchData()" id="searchButton">Search Data</button>
+    <br>
+    <br>
+    </main>
+
+    <main id="ergebnis">
+    <table>
+      <thead>
+        <tr>
+          <th>Titel</th>
+          <th>Preis</th>
+          <th>Beschreibung</th>
+        </tr>
+      </thead>
+      <tbody id="products"></tbody>
+    </table>
+    <p id="responseFailed"></p>
+    <br>
+    <br>
+    </main>
+
+    <!-- Seite neu laden -->
+    <p>Seite neu zu laden:</p>
+    <i class="fas fa-sync-alt" onclick="refreshPage()"></i>
+    
+  </body>
+
+
+
+
+<!-- Fußbereich -->
+<footer>
+    Web-Programming since 2023 &copy; Dominic Mohrlok
+</footer>
+
+</html>

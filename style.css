@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* allgemein, damit voreinstellung von browers nicht ünernommen wird */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/* Text im header zentrieren */
+header{
+    text-align: center;
+    background-color: lightgreen;
+}
+
+/* body, schriftgröße und alternative */
+body {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 12pt;
+    hyphens: auto;
+    background-color: lightgray;
+    max-width: 800px;
+    padding: 15px;
+
+}
+
+#ergebnis {
+    display: none;
+}
+
+
+/* footer personalisieren */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: lightgreen;
+    text-align: center;
+    }
