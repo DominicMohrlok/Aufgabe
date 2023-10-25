@@ -5,12 +5,25 @@ html, body {
 }
 
 /* Kopf- & Fußbereich */
-header, footer{
+header{
     width: 100%;
     height: auto;
     text-align: center;
     background-color: lightgreen;
 }
+
+footer{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
 
 /* body, schriftgröße und alternative */
 body {
@@ -20,6 +33,7 @@ body {
     hyphens: auto;
     background-color: lightgray;
 }
+
 /* erstmal ausblenden */
 #ergebnis {
     display: none;
@@ -28,3 +42,17 @@ body {
 #neu {
     display: none;
 }
+
+th {
+    border: 1px solid #000; /* Fügt 1 Pixel breite Rahmenlinien hinzu */
+    padding: 8px; /* Optional: Fügt Innenabstand hinzu */
+    text-align: center; /* Optional: Zentriert den Text in den Zellen */
+}
+
+tr{
+    display: inline-block;
+    border: 1px solid lightgreen;
+    margin: 1em;
+    padding: 2em;
+}
+
