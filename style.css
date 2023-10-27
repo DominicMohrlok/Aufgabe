@@ -1,18 +1,23 @@
 /* allgemein, damit voreinstellung von browers nicht ünernommen wird */
-html, body {
+body {
     margin: 0;
-    padding: ;
+    padding: 0;
+    background-color: lightgray;
 }
 
-/* Kopf- & Fußbereich */
-header{
+/* Kopfbereich */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 5em;
     text-align: center;
     background-color: lightgreen;
 }
 
-footer{
+/* Fußbereich */
+footer {
     width: 100%;
     height: auto;
     text-align: center;
@@ -20,10 +25,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 0;
 }
-
 
 /* body, schriftgröße und alternative */
 body {
@@ -32,27 +34,38 @@ body {
     font-size: 12pt;
     hyphens: auto;
     background-color: lightgray;
+    margin-top: 7em; /* Höhe des änders individuell angepasst, für besser Darstellung */
 }
+
 
 /* erstmal ausblenden */
-#ergebnis {
+
+#keine, #produkt, #neu, #ergebnis, #kategorieAnzeige, #ergebniskategorie{
     display: none;
 }
 
-#neu {
-    display: none;
+/* Überschriften unterstreichen und kursiv */
+#preis, #kategorie, #beschreibung, #marke, #lagerbestand{
+    font-style: italic;
+    text-decoration: underline;
 }
 
-th {
+/* Links in der Ergebnissseite */
+a {
     border: 1px solid #000; /* Fügt 1 Pixel breite Rahmenlinien hinzu */
     padding: 8px; /* Optional: Fügt Innenabstand hinzu */
     text-align: center; /* Optional: Zentriert den Text in den Zellen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 5px; /* Optional: Fügt Abstände zwischen den Zellen hinzu */  
 }
 
-tr{
-    display: inline-block;
-    border: 1px solid lightgreen;
-    margin: 1em;
-    padding: 2em;
+#produktbild{
+    min-width: 50%;
+    max-width: 50%;
+
 }
+
 
